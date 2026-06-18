@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { FolderHeart, LogOut } from 'lucide-react';
+import { FolderSearch, LogOut } from 'lucide-react';
 import { supabase } from './lib/supabase';
 import { useAuth } from './context/AuthContext';
 import AuthPage from './pages/AuthPage';
@@ -143,7 +143,7 @@ function App() {
     <div className="app-container">
       <header>
         <h1>
-          <FolderHeart className="w-8 h-8" />
+          <FolderSearch className="w-8 h-8" />
           Physical File Tracker
         </h1>
         <p>Keep track of your physical files and folders</p>
