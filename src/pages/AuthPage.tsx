@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import type { FormEvent } from 'react';
 import { supabase } from '../lib/supabase';
-import { FolderHeart, ChevronLeft } from 'lucide-react';
+import { FolderSearch , ChevronLeft } from 'lucide-react';
 
 type AuthMode = 'login' | 'signup' | 'forgot';
 
@@ -67,7 +67,7 @@ export default function AuthPage() {
         borderTop: '4px solid #4a6fa5',
       }}>
         <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
-          <FolderHeart style={{ width: 48, height: 48, color: '#4a6fa5', margin: '0 auto 0.75rem' }} />
+          <FolderSearch style={{ width: 48, height: 48, color: '#4a6fa5', margin: '0 auto 0.75rem' }} />
           <h1 style={{ fontSize: '1.75rem', fontWeight: 800, color: '#4a6fa5' }}>Archivex</h1>
           <p style={{ color: '#6c757d' }}>Physical File Tracker</p>
         </div>
